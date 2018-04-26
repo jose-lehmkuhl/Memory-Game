@@ -1,6 +1,5 @@
 /*jshint esversion: 6 */
 //variables declaration********
-let cardsList = $(".card");
 let flippedCards = [];
 let numberOfMatches;
 let startTime;
@@ -22,13 +21,8 @@ function time() {
 
 //set up Game
 function init() {
-  $.each(cardsList, (ind, el) => {
-    el.remove();
-    el.className = "card";
-  });
+  addCards();
   clearInterval(intervalID);
-  cardsList = shuffle(cardsList);
-  cards.append(cardsList);
   numberOfMatches = 0;
   numTurns = 0;
   flippedCards = [];
@@ -53,6 +47,29 @@ function shuffle(array) {
   }
 
   return array;
+}
+
+//add cards
+function addCards() {
+  $(".card").remove();
+  let cardClasses = [
+    "fas fa-bowling-ball",
+    "fas fa-utensils",
+    "far fa-smile",
+    "fas fa-rocket",
+    "fas fa-poo",
+    "fas fa-paw",
+    "far fa-hand-peace",
+    "fas fa-coffee"
+  ];
+  cardClasses = cardClasses.concat(cardClasses);
+  shuffle(cardClasses);
+  let str = "";
+  cardClasses.forEach(el => {
+    str += `<li class="card"><i class="${el}"></i></li>`;
+  });
+  const cardsHTML = $.parseHTML(str);
+  cards.append(cardsHTML);
 }
 
 //display card
