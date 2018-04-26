@@ -4,7 +4,7 @@ This memory game is my final project on the Udacity Front-End Foundations Nanode
 
 ## Download
 
-The game can be downloaded from (https://github.com/ "this github link").
+The game can be downloaded from [this github directory](https://github.com/jose-lehmkuhl/Memory-Game).
 
 ## Starting the game
 
@@ -25,4 +25,4 @@ The game used Bootstrap and JQuery to run, files are included in the download.
 
 ## Final considerations
 
-This project layout is inspired on Udacity Matching Game, wich can be found (https://github.com/udacity/fend-project-memory-game "here").
+This project layout is inspired on Udacity Matching Game, wich can be found [here](https://github.com/udacity/fend-project-memory-game).
