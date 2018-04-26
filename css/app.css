@@ -1,0 +1,81 @@
+.container {
+    max-width: 680px;
+}
+
+.rating {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.section-font {
+    font-size: 15px;
+}
+
+.timer {
+  padding-right: 2px;
+}
+
+.pointer {
+    cursor: pointer;
+}
+
+.cards-container {
+    width: 100%;
+    padding: 25px;
+    border: 2px black solid;
+    border-radius: 10px;
+    box-shadow: 12px 15px 20px 0 rgba(46, 61, 73, 0.5);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background: linear-gradient(#ffffff 50%, rgba(255,255,255,0) 0) 0 0,
+    radial-gradient(circle closest-side, #FFFFFF 53%, rgba(255,255,255,0) 0) 0 0,
+    radial-gradient(circle closest-side, #FFFFFF 50%, rgba(255,255,255,0) 0) 55px 0 #48B;
+    background-size:110px 200px;
+    background-repeat:repeat-x;
+}
+
+.card {
+    height: 150px;
+    width: 23%;
+    border: 1px black solid;
+    background:  #dfdbe5 url("../img/I-like-food.svg");/* design from www.heropatterns.com */
+    font-size: 0;
+    color: #ffffff;
+    border-radius: 8px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 5px 2px 20px 0 rgba(46, 61, 73, 0.5);
+    margin-bottom: 10px;
+}
+
+@media screen and (max-width: 767px) {
+    .cards-container {
+        padding: 15px;
+    }
+
+    .card {
+        height: calc((100vw - 70px)/4);
+    }
+}
+
+@media screen and (max-width: 359px) {
+    .section-font {
+        font-size: 14px;
+    }
+}
+
+.card.open {
+    background: #444444;
+    cursor: default;
+    font-size: 32px;
+}
+
+.card.match {
+    background: #bab033;
+    cursor: default;
+    font-size: 32px;
+}

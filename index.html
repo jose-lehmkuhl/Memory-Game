@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Memory Game</title>
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
+        <link href="https://fonts.googleapis.com/css?family=Gaegu" rel="stylesheet">
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/app.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+    </head>
+        <div class="container">
+            <header class="row text-center">
+                <h1>Memory Game</h1>
+            </header>
+
+            <section class="row section-font">
+                <ul class="col-xs-3 rating">
+                    <li><i class="fa fa-star"></i></li>
+        		        <li><i class="fa fa-star"></i></li>
+        		        <li><i class="fa fa-star"></i></li>
+                </ul>
+
+                <span class="col-xs-1 text-right turns">0</span>
+                <span class="col-xs-1 text-left">Turns</span>
+
+                <div class="col-xs-4 text-center">
+                    <span class="col-xs-4 text-right timer">0</span>
+                    <span class="col-xs-8 text-left">seconds</span>
+                </div>
+
+                <div class="col-xs-2 col-xs-offset-1">
+                    <i class="fas fa-sync pull-right pointer"></i>
+        	      </div>
+            </section>
+
+            <ul class="cards-container">
+                <li class="card">
+                    <i class="fas fa-bowling-ball"></i>
+                </li>
+
+                <li class="card">
+                    <i class="fas fa-bowling-ball"></i>
+                </li>
+
+                <li class="card">
+                    <i class="fas fa-utensils"></i>
+                </li>
+
+                <li class="card">
+                    <i class="fas fa-utensils"></i>
+                </li>
+
+                <li class="card">
+                    <i class="far fa-smile"></i>
+                </li>
+
+                <li class="card">
+                    <i class="far fa-smile"></i>
+                </li>
+
+                <li class="card">
+                    <i class="fas fa-rocket"></i>
+                </li>
+
+                <li class="card">
+                    <i class="fas fa-rocket"></i>
+                </li>
+
+                <li class="card">
+                    <i class="fas fa-poo"></i>
+                </li>
+
+                <li class="card">
+                    <i class="fas fa-poo"></i>
+                </li>
+
+                <li class="card">
+                    <i class="fas fa-paw"></i>
+                </li>
+
+                <li class="card">
+                    <i class="fas fa-paw"></i>
+                </li>
+
+                <li class="card">
+                    <i class="far fa-hand-peace"></i>
+                </li>
+
+                <li class="card">
+                    <i class="far fa-hand-peace"></i>
+                </li>
+
+                <li class="card">
+                    <i class="fas fa-coffee"></i>
+                </li>
+
+                <li class="card">
+                    <i class="fas fa-coffee"></i>
+                </li>
+
+            </ul>
+
+        </div>
+
+        <div class="modal fade" id="winning-modal" tabindex="-1">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h2>Congratulations!!</h2>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <p>You finished the game in <span class="time-taken"></span> seconds, with a rating of <span class="final-rating"></span> stars!</p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Restart</button>
+                    </div>
+                </div>
+            </div>
+      </div>
+
+    <body>
+        <script src="js/app.js"></script>
+    </body>
+</html>
